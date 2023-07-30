@@ -1,0 +1,49 @@
+version: '3.9'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile-backend
+    ports:
+      - "5000:80"
+    volumes:
+      - ./backend/src:/var/www/html
+    restart: always
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: asknicely
+    volumes:
+      - ./backend/mysql/initCompanies.sql:/docker-entrypoint-initdb.d/initCompanies.sql
+      - ./backend/mysql/initEmployees.sql:/docker-entrypoint-initdb.d/initEmployees.sql
+
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "5001:8080"
+
+  vue-app:
+    build:
+      context: .
+      dockerfile: Dockerfile-frontend
+    container_name: frontend
+    ports:
+      - "5002:8080"
+    volumes:
+      - ./frontend:/app
+    restart: always
+    environment:
+      - NODE_ENV=development
+    networks:
+      - vue-network
+
+networks:
+  vue-network:
+    driver: bridge
