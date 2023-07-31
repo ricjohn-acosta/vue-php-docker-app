@@ -1,7 +1,7 @@
 # Vue + PHP + docker app
 ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/2f539fc0-7637-47f1-9286-2be4d81639a2)
 
-A fullstack vue + PHP app containerised with docker.
+A fullstack vue + vanilla PHP app containerised with docker.
 
 ## How to run the app
 1. Make sure you have [docker desktop](https://www.docker.com/products/docker-desktop/) installed
