@@ -10,13 +10,13 @@ A fullstack vue + vanilla PHP app containerised with docker.
 4. Open a terminal within this repository and run `docker-compose up -d`
 5. Visit `http://localhost:5002/`
 
-### - Adding employees:
+#### Adding employees:
 1. Click the `Import CSV` button to choose a csv file 
    - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/8175b112-b79c-412f-8084-901b5aebea58)
 2. Click the green button to add employees
    - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/9865ac3c-aed3-45f8-ae75-e30ff560701e)
      
-### - Editing employee email:
+#### Editing employee email:
 1. Click the pencil button
    - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/fb347780-d59d-4dbe-b658-b18d64b062da)
 2. Edit the email and then click the check button to save the email.
@@ -31,5 +31,5 @@ A fullstack vue + vanilla PHP app containerised with docker.
 3. Run `docker volume prune -a`
 
 Notes:
-- If the frontend app errors on startup just wait for it as the db container may still preparing for connection.
+- If the frontend app errors on startup just wait for it as the db container may still be preparing for connection.
 - If you want to check out the database visit `http://localhost:5002/` with `username: root` and `pw: example`
