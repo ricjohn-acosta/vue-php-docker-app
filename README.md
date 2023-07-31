@@ -31,5 +31,5 @@ A fullstack vue + vanilla PHP app containerised with docker.
 3. Run `docker volume prune -a`
 
 Notes:
-- If the frontend app errors on startup just wait for it as the db container may still be preparing for connection.
+- If the frontend app errors on startup just keep refreshing the page as the db container may still be busy preparing for connection.
 - If you want to check out the database visit `http://localhost:5002/` with `username: root` and `pw: example`
