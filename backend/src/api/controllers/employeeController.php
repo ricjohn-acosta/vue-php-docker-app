@@ -18,7 +18,6 @@ class EmployeeController {
     {
         $tmpName = $file['tmp_name'];
 
-        var_dump('test');
         try {
             if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
                 if (($ref = fopen($tmpName, "r")) !== false) {
