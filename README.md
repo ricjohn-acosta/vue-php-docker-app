@@ -11,7 +11,7 @@ A fullstack vue + PHP app containerised with docker.
 5. Visit `http://localhost:5002/`
 
 ### - Adding employees:
-1. Click the `Import CSV` button
+1. Click the `Import CSV` button to choose a csv file 
    - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/8175b112-b79c-412f-8084-901b5aebea58)
 2. Click the green button to add employees
    - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/9865ac3c-aed3-45f8-ae75-e30ff560701e)
