@@ -38,6 +38,7 @@ services:
       - "5002:8080"
     volumes:
       - ./frontend:/app
+      - /app/node_modules
     restart: always
     environment:
       - NODE_ENV=development
