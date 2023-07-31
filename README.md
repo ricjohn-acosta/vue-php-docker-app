@@ -1,5 +1,5 @@
 # Vue + PHP + docker app
-![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/c6b7e316-0cea-4df1-9f30-df0c833144b0)
+![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/9328edd6-20f8-407e-b08b-66f5fcb4b5dc)
 
 A fullstack vue + PHP app containerised with docker.
 
@@ -12,15 +12,15 @@ A fullstack vue + PHP app containerised with docker.
 
 ### - Adding employees:
 1. Click the `Import CSV` button
-   - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/41ea450e-5f14-4ee0-a73c-0d73ac638de4)
+   - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/8175b112-b79c-412f-8084-901b5aebea58)
 2. Click the green button to add employees
-   - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/5574ecc0-169b-4163-9bb8-72eb317ed0cc)
-
+   - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/9865ac3c-aed3-45f8-ae75-e30ff560701e)
+     
 ### - Editing employee email:
 1. Click the pencil button
-   - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/a0c8046e-06c7-4fc6-980b-e599a8a66829)
+   - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/fb347780-d59d-4dbe-b658-b18d64b062da)
 2. Edit the email and then click the check button to save the email.
-   - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/a3eee5d9-525e-4323-a106-5952b67e508d)
+   - ![image](https://github.com/ricjohn-acosta/vue-php-docker-app/assets/41725332/41d19d9c-d8b5-4fd9-b40a-e518c75b63f9)
 
 ## How to run tests
 1. Open a terminal within this repository and run `docker exec -it vue-php-docker-app-php-1 php /var/www/vendor/bin/phpunit html/tests`
